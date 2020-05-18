@@ -1,15 +1,10 @@
 package regresorlineal.demo;
 
-
-
-
-
 public class Arrays {
 
     float size;
     float []array;
     int contador;
-
 
 
 
@@ -27,19 +22,18 @@ public class Arrays {
     }
 
 
-
     public int incremento(){
         contador++;
         return contador;
     }
 
-    public float [] size(int   sizee){
+    public int  size(int   sizee){
 
         array=new float[sizee];
         size = sizee;
         System.out.println("El size del dataset es : " +sizee);
 
-        return array;
+        return sizee;
 
 
     }
@@ -83,13 +77,13 @@ public class Arrays {
 
 
 
-    public int  llenarArray(int dato1){
+    public float [] llenarArray(float  dato1){
 
         array[contador] = dato1;
         incremento();
 
 
-        return dato1;
+        return array;
         }
 
         public void imprimir(){
@@ -97,6 +91,7 @@ public class Arrays {
                 System.out.println(array[i]);
             }
         }
+
 
 
 

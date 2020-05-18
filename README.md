@@ -80,3 +80,14 @@ Luego de haberlo metido el usuario puede hacer un preview del dataset en el path
 y luego para obtener el resultado en el path regresion.
 
 La primera entrega resuelve el problema de regresión lineal simple con un dataset que el usario metio
+
+### Entrega final
+
+El proyecto es capaz de funcionar de 3 maneras:
+
+•   **1** Cargar datos desde un csv con la ruta "/llebarbatch" le tenemos que pasar como argumento un String que será el nombre del archivo que queremos cargar, por ejemplo "test.csv". Luego para obtener el resultado vamos al path "/regresion"
+
+•   **2** Trabajar con arrays de manera dinámica, para hacerlo primero tenemos que definir el tamaño del array, eso lo hacemos en el path "/size" que le tenemos que enviar como parámetro un int. Luego en el path "/llenar" le tenemos que enviar dos int's que deberámn ser enviados en el orden Y X, esta ruta lo que hace es que va llenando de manera dinámica el arreglo que declaramos anteriormente con su respectivo tamaño. Para llenarlo tenemos que hacer las requests del tamaño que elegimos, cada una con diferente Y y X. Luego para obtener el resultado vamos al path "/regresion"
+
+•   **3** La tercera manera puede persistir los archivos aunque se cierre el programa, tenemos que trabajar de la manera **2** pero en despues de haberlos cargado al path "/llenar" tenemos que hacerle request al path "/llenarcsv" esto lo que va a hacer es poder leer los datos y cargarlos al csv, podemos crear un nuevo archivo o bien cargarle informacion a uno existente. Luego para obtener el resultado vamos al path "/regresion"
+
