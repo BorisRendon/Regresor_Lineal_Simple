@@ -60,7 +60,7 @@ public class Arrays {
 
 
         }
-        System.out.println(n);
+        //System.out.println(n);
         return  sum/(n);
     }
 

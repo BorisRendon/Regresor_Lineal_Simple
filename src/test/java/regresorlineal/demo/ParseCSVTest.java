@@ -6,6 +6,10 @@ class ParseCSVTest {
 
     Arrays test1 = new Arrays();
 
+    public void testappend(){
+        float arreglo [][];
+    }
+
 
 
 

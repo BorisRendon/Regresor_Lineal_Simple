@@ -77,9 +77,9 @@ public class ParseCSV {
 
         //System.out.println(Arrays.toString(testY));
         //System.out.println(Arrays.toString(arr));
-        System.out.println(Arrays.toString(datosY));
+        /*System.out.println(Arrays.toString(datosY));
         System.out.println(Arrays.toString(datosX));
-        System.out.println(linenumber);
+        System.out.println(linenumber);*/
 
 
 
@@ -123,7 +123,7 @@ public class ParseCSV {
     public void pruebadasda(float[]y , float[]x){
         try{
         //BufferedWriter br = new BufferedWriter(new FileWriter("csvwriter123.csv"));
-        FileWriter csvwriter = new FileWriter("Valores.csv",true);
+        FileWriter csvwriter = new FileWriter("prueba.csv",true);
 
         //StringBuilder sb = new StringBuilder();
         for(int i=0;i<y.length;i++){

@@ -70,14 +70,16 @@ public class DemoApplication {
 
     @RequestMapping("/regresion")
     public String B1_B0(){
-        float covarianza = X.covarianza(X.getArray(),Y.getArray(),X.getArray().length);
-        float varianza = X.varianza(X.getArray(),X.getArray().length);
+        float covarianza = X.covarianza(Y.getArray(),X.getArray(),X.getArray().length);
+        float varianza = X.varianza(Y.getArray(),X.getArray().length);
+
+
         float Beta1 = covarianza/varianza;
 
         System.out.println("El resultado de B1 es de: " + Beta1);
 
-        float mediaY =  X.media(Y.getArray(),Y.getArray().length);
-        float mediaX =  X.media(X.getArray(),X.getArray().length);
+        float mediaX =  X.media(Y.getArray(),Y.getArray().length);
+        float mediaY =  Y.media(X.getArray(),X.getArray().length);
 
         float Beta0 =  mediaY - Beta1*mediaX;
 
@@ -87,7 +89,7 @@ public class DemoApplication {
 
         System.out.println("La media de Y es:" + mediaY);
 
-        String resultadoregresion = "El resultado de la regresion lineal es de: "+"y =" + Beta1 + "+" + Beta0;
+        String resultadoregresion = "El resultado de la regresion lineal es de: "+"y =" + Beta0 + "+" + Beta1+"x";
 
         return resultadoregresion;
     }
