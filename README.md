@@ -51,12 +51,7 @@ Assumptions	El que use el programa tiene conocimientos sobre econometría.
 **Acceptance criteria:** 	Lee y guarda los inputs como quiero.
 
 ## 4. User flow and design 
-La idea del programa es que el usuario pueda ingresar ya sea de manera manual o leer un archivo csv y que el programa le retorne de manera agradable a la vista los resultados del modelo de la regresión lineal simple junto a la grafica que explica las variaciones. 
-Esperaría que se viera algo asi: 
-[![Resultado_Esperado](https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.slideshare.net%2Fjhidalgo1977%2Fregresin-simple-y-correlacin-10607318&psig=AOvVaw2wTcGpZPofA2JdAcgKvwWz&ust=1582807900048000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjtjomh7-cCFQAAAAAdAAAAABAD "Resultado_Esperado")](https://image.slidesharecdn.com/regresinsimpleycorrelacin-111215152837-phpapp01/95/regresin-simple-y-correlacin-1-728.jpg?cb=1323963118 "Resultado_Esperado")
-
- 
-Donde podremos visualizar el valor de B0 y B1 junto a una grafica con los ejes etiquetados y los yi’s graficados para poder visualizar los tipos de variaciones.
+La idea del programa es que el usuario pueda ingresar ya sea de manera manual o leer un archivo csv y que el programa le retorne de manera agradable a la vista los resultados del modelo de la regresión lineal simple 
 	
 
 ### 5. Analytics
